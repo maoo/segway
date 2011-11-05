@@ -1,2 +1,2 @@
-web: lein run -m demo.web
+web: lein run -m segway.run
 
