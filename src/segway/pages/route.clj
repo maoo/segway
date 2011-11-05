@@ -7,12 +7,20 @@
 
 (html/defsnippet section-model "template/my-style-demo.html" *section-sel*
   [{:keys [text image]}]
-  [:img] (html/do->
-        (html/set-attr :height "125")
-        (html/set-attr :width "125")
-        ;;@TODO alternate imgl/imgr on odd/even elements
-        (html/set-attr :class "imgr")
-        (html/set-attr :src image))
+
+  [:img] (fn [match]
+                 (if image (do
+                   ((html/set-attr :height "125") match)
+                   ((html/set-attr :width "125") match)
+                   ((html/set-attr :class "imgr") match)
+                   ((html/set-attr :src image) match))
+                 ((html/substitute "") match)))
+;  [:img] (html/do->
+;
+;        (html/set-attr :width "125")
+;        ;;@TODO alternate imgl/imgr on odd/even elements
+;        (html/set-attr :class "imgr")
+;        (html/set-attr :src image))
   [:p]  (html/do->
         (html/html-content text)))
 

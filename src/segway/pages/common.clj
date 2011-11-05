@@ -15,26 +15,26 @@
         <li><a href=\"#\">Rutas</a>
           <ul>
             <li><a href=\"route-1.html\">Miradores del Albaicin-Sacromonte</a></li>
-            <li><a href=\"#\">Sierra de la Alfaguara</a></li>
-            <li><a href=\"#\">Comarca del Marquesado</a></li>
-            <li><a href=\"#\">Dólmenes de Gorafe</a></li>
-            <li><a href=\"#\">Trevenque</a></li>
-            <li><a href=\"#\">Arco Noreste de la Vega de  Granada</a></li>
-            <li><a href=\"#\">Dehesa del Camarate</a></li>
-            <li><a href=\"#\">Fuente la Teja</a></li>
-            <li><a href=\"#\">Ciudad de Guadix</a></li>
-            <li><a href=\"#\">Dílar</a></li>
-            <li><a href=\"#\">Tranvía de la Sierra</a></li>
-            <li><a href=\"#\">Parque Peri Urbano de la Alhambra</a></li>
+            <li><a href=\"route-2.html\">Parque Peri Urbano de la Alhambra</a></li>
+            <li><a href=\"route-3.html\">Sierra de la Alfaguara</a></li>
+            <li><a href=\"route-4.html\">Comarca del Marquesado</a></li>
+            <li><a href=\"route-5.html\">Dólmenes de Gorafe (Desierto granadino)</a></li>
+            <li><a href=\"route-6.html\">Trevenque</a></li>
+            <li><a href=\"route-7.html\">Arco Noreste de la Vega de Granada</a></li>
+            <li><a href=\"route-8.html\">Dehesa del Camarate</a></li>
+            <li><a href=\"route-9.html\">Fuente de la Teja</a></li>
+            <li><a href=\"route-10.html\">Ciudad de Guadix</a></li>
+            <li><a href=\"route-11.html\">Dílar</a></li>
+            <li><a href=\"route-12.html\">Tranvía de la Sierra</a></li>
           </ul>
         </li>
-        <li><a href=\"#\">Circuitos</a></li>
+        <li><a href=\"tracks.html\">Circuitos</a></li>
         <li><a href=\"#\">Mas</a>
           <ul>
-            <li><a href=\"#\">Quienes Somos</a></li>
-            <li><a href=\"#\">Que es un Segway</a></li>
-            <li><a href=\"#\">Paquetes Vacationales</a></li>
-            <li><a href=\"#\">Preguntas Frecuentes</a></li>
+            <li><a href=\"about.html\">Quienes Somos</a></li>
+            <li><a href=\"whatis.html\">Que es un Segway</a></li>
+            <li><a href=\"holidays.html\">Paquetes Vacationales</a></li>
+            <li><a href=\"faq.html\">Preguntas Frecuentes</a></li>
           </ul>
         </li>"))
 
