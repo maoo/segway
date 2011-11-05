@@ -1,2 +1,6 @@
 lib
-
+.DS_Store
+*.ipr
+*.iws
+*.iml
+target
