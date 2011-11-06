@@ -14,18 +14,18 @@
        "<li class=\"active\"><a href=\"home.html\">Home</a></li>
         <li><a href=\"#\">Rutas</a>
           <ul>
-            <li><a href=\"route-1.html\">Miradores del Albaicin-Sacromonte</a></li>
-            <li><a href=\"route-2.html\">Parque Peri Urbano de la Alhambra</a></li>
-            <li><a href=\"route-3.html\">Sierra de la Alfaguara</a></li>
-            <li><a href=\"route-4.html\">Comarca del Marquesado</a></li>
-            <li><a href=\"route-5.html\">Dólmenes de Gorafe (Desierto granadino)</a></li>
-            <li><a href=\"route-6.html\">Trevenque</a></li>
-            <li><a href=\"route-7.html\">Arco Noreste de la Vega de Granada</a></li>
-            <li><a href=\"route-8.html\">Dehesa del Camarate</a></li>
-            <li><a href=\"route-9.html\">Fuente de la Teja</a></li>
-            <li><a href=\"route-10.html\">Ciudad de Guadix</a></li>
-            <li><a href=\"route-11.html\">Dílar</a></li>
-            <li><a href=\"route-12.html\">Tranvía de la Sierra</a></li>
+            <li><a href=\"albaycin.html\">Miradores del Albaicin-Sacromonte</a></li>
+            <li><a href=\"periurbano.html\">Parque Peri Urbano de la Alhambra</a></li>
+            <li><a href=\"alfaguara.html\">Sierra de la Alfaguara</a></li>
+            <li><a href=\"marquesado.html\">Comarca del Marquesado</a></li>
+            <li><a href=\"gorafe.html\">Dólmenes de Gorafe (Desierto granadino)</a></li>
+            <li><a href=\"trevenque.html\">Trevenque</a></li>
+            <li><a href=\"vega-granada.html\">Arco Noreste de la Vega de Granada</a></li>
+            <li><a href=\"camarate.html\">Dehesa del Camarate</a></li>
+            <li><a href=\"fuente-teja.html\">Fuente de la Teja</a></li>
+            <li><a href=\"guadix.html\">Ciudad de Guadix</a></li>
+            <li><a href=\"dilar.html\">Dílar</a></li>
+            <li><a href=\"tranvia-sierra.html\">Tranvía de la Sierra</a></li>
           </ul>
         </li>
         <li><a href=\"tracks.html\">Circuitos</a></li>
@@ -49,7 +49,11 @@
 (html/defsnippet footer-snippet "template/my-style-demo.html" *footer-sel*
   [cntx]
   [:.box1 :h2] (html/content "¿ Quienes somos ?")
-  [:.box1 :img] (html/set-attr :src "images/segway/miguel-thumb.jpg")
+  [:.box1 :img] (html/do->
+        (html/set-attr :src "images/segway/about-01.jpg")
+        (html/set-attr :width "150")
+        (html/set-attr :height "150"))
+
   [:.box1 :p] (html/substitute "")
   [:.box1] (html/append "Miguel Algarra nacido 1962 en el Albaycín, amante de la naturaleza, tras diferentes etapas relacionadas con el medio natural, el turismo activo y varios años de formación crea una empresa con un grupo de personas jóvenes que apuestan por un ecoturismo sobre ruedas,respetuoso con el medio ambiente en un entorno poco conocido, intimo y con encanto natural.")
   [:.contactdetails :h2] (html/content "Contactar")
