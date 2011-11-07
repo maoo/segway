@@ -46,6 +46,8 @@
   [:#topnav] (html/content (map #(menu-snippet %) [0])))
 
 (def *footer-sel* [:#footer])
+(def image-list (mapcat :images (vals segway.data/webdata)))
+
 (html/defsnippet footer-snippet "template/my-style-demo.html" *footer-sel*
   [cntx]
   [:.box1 :h2] (html/content "¿ Quienes somos ?")
@@ -67,7 +69,10 @@
           <li>+34 627390785</li>
           <li><a href=\"mailto:info@segwaygranadaventur.com\">info@segwaygranadaventur.com</a></li>")
 
-  [:.flickrbox :h2] (html/content "Nuestras Fotos"))
+  [:.flickrbox :h2] (html/content "Nuestras Fotos")
+  [:.flickrbox :.wrap] (html/clone-for [iter (range 6)]
+        (let [image-set (nth image-list (rand-int (count image-list)))]
+          (html/html-content (str "<div id=\"flickr_badge_image" (inc iter) "\" class=\"flickr_badge_image\"><a class=\"single_image\" href=\"" (first image-set) "\"><img width=\"80\" height=\"80\" alt=\"\" src=\"" (second image-set) "\"></a></div>")))))
 
 (def *copyright-sel* [:.fl_left])
 (html/defsnippet copyright-snippet "template/my-style-demo.html" *copyright-sel*

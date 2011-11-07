@@ -16,7 +16,7 @@
     (run-jetty
       (-> app
         (wrap-file *webdir*)
-        (wrap-reload (conj nses 'segway.data 'segway.web 'segway.pages.common 'segway.pages.home 'segway.pages.route))
+        (wrap-reload (conj nses 'segway.data 'segway.web 'segway.pages.common 'segway.pages.home 'segway.pages.detail))
         (wrap-stacktrace))
       {:port port :join? false})))
 
