@@ -300,9 +300,9 @@
                               "<b>¿Hace falta que llevemos casco?</b><br/>No, el casco lo ponemos nosotros, además de chalecos reflectantes para la mejor visibilidad de los usuarios."
                               "<b>¿Qué ropa tengo que llevar para montar en Segway?</b><br/>La ropa que normalmente lleves en la temporada que vas a hacer las rutas en Segway. En periodos calurosos ropa ligera y; en tiempo frío ropa de abrigo (guantes, gorro, polar, etc.). Aunque es recomendable usar la ropa que llevarías a una excursión al campo."
                               "<b>¿Qué calzado tengo que llevar para montar en Segway?</b><br/>El calzado recomendado para hacer rutas en Segway es calzado atado (no chanclas), ten en cuenta que es como pasear por el monte."]}
-   "/home.html" {:title "Segway Granada Ventur"
+   "/index.html" {:title "Segway Granada Ventur"
                  :route "index"
-                 :url "home.html"
+                 :url "index.html"
                  :banners ["/albaycin.html" "/periurbano.html" "/marquesado.html"]
                  :boxes [
                       {:image ["images/segway/whatis-square-01.jpg" "images/segway/whatis-01.jpg"]

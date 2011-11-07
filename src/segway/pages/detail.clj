@@ -38,7 +38,7 @@
 
   ;;Breadcrumb
   [:#breadcrumb :ul :li] (html/substitute "")
-  [:#breadcrumb :ul] (html/html-content "<li><a href=\"home.html\">Home</a></li><li> » </li>Rutas</li><li> » </li><li class=\"current\">" title "</li>")
+  [:#breadcrumb :ul] (html/html-content "<li><a href=\"index.html\">Home</a></li><li> » </li>Rutas</li><li> » </li><li class=\"current\">" title "</li>")
 
   ;;Page content
   [:#content]   (html/content (map #(section-snippet %) paragraphs))

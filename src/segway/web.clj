@@ -21,6 +21,6 @@
           (let [url (req :uri)
                webdata-item (get webdata url)]
                 (render-to-response
-                          (if (= url "/home.html") (index webdata-item) (detail webdata-item)))))
+                          (if (= url "/index.html") (index webdata-item) (detail webdata-item)))))
    [&]        {:status 404
                :body "Page Not Found"}))

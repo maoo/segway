@@ -12,7 +12,7 @@
 (html/defsnippet menu-snippet "template/my-style-demo.html" *menu-sel*
   [cntx]
   [:ul] (html/html-content
-       "<li class=\"active\"><a href=\"home.html\">Home</a></li>
+       "<li class=\"active\"><a href=\"index.html\">Home</a></li>
         <li><a href=\"#\">Rutas</a>
           <ul>
             <li><a href=\"albaycin.html\">Miradores del Albaicin-Sacromonte</a></li>
