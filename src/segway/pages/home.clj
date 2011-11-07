@@ -1,5 +1,6 @@
 (ns segway.pages.home
-  (:use segway.pages.common)
+  (:use segway.pages.common
+        segway.data)
   (:require [net.cgrand.enlive-html :as html]))
 
 (def *banner-sel* [:#banner1])
@@ -28,7 +29,7 @@
   ;;Structure - using snippets in segway.pages.common
   ;;@TODO Here we're not using map in the right way, we should just apply the snippet function
   [:#header]   (html/content (map #(header-snippet %) [0]))
-  [:#footer]   (html/content (map #(footer-snippet %) [0]))
+  [:#footer]   (html/content (map #(footer-snippet %) [(mapcat :images (vals segway.data/webdata))]))
   [:.fl_left]   (html/content (map #(copyright-snippet %) [0]))
 
   ;; Home Contents
