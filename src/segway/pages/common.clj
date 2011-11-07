@@ -1,4 +1,5 @@
 (ns segway.pages.common
+  (:use segway.data)
   (:require [net.cgrand.enlive-html :as html]))
 
 (def *logo-sel* {[:#logo :> :h1][:#logo :> :p]})

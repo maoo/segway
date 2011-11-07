@@ -1,10 +1,8 @@
-(ns segway.data
-  (:use segway.pages.home
-        segway.pages.detail))
+(ns segway.data)
 
 (def webdata
   {"/albaycin.html" {:title "Miradores del Albaicin-Sacromonte"
-                     :route detail
+                     :route "detail"
                      :url "albaycin.html"
                      :paragraphs [
                                    "Descubriremos el  Albaicín  y el Sacromonte  a través de sus miradores (San Cristóbal, Sacromonte, Carvajales, Lona, Huerto del Carlos, San Nicolás), calles y callejones, iglesias y rincones abalconados."
@@ -27,7 +25,7 @@
                               ["images/segway/routes/albaycin/albaycin-15.jpg" "images/segway/routes/albaycin/albaycin-square-15.jpg"]
                               ["images/segway/routes/albaycin/albaycin-16.jpg" "images/segway/routes/albaycin/albaycin-square-16.jpg"]]}
    "/periurbano.html" {:title "Parque Peri Urbano de la Alhambra"
-                       :route detail
+                       :route "detail"
                        :url "periurbano.html"
                        :paragraphs [
                                      "Recorrido tranquilo para disfrutar del segway, con vistas sobre la Alhambra, del valle del rio Darro, Sacromonte y Sierra Nevada, en un entorno natural de pinos y olivar, saliéndonos de los circuitos habituales destacando  los valores paisajísticos de Granada."
@@ -45,7 +43,7 @@
                                 ["images/segway/routes/periurbano/periurbano-11.jpg" "images/segway/routes/periurbano/periurbano-square-11.jpg"]
                                 ["images/segway/routes/periurbano/periurbano-12.jpg" "images/segway/routes/periurbano/periurbano-square-12.jpg"]]}
    "/alfaguara.html" {:title "Sierra de la Alfaguara"
-                      :route detail
+                      :route "detail"
                       :url "alfaguara.html"
                       :paragraphs [
                                     "Al Noroeste  de la capital a unos 20 Km., configura un importante conjunto de geomorfología cárstica que mantiene formaciones de quejigar-encinar, pinares autóctonos y repoblación y numerosos endemismos catalogados en peligro de extinción."
@@ -69,7 +67,7 @@
                                ["images/segway/routes/alfaguara/alfaguara-16.jpg" "images/segway/routes/alfaguara/alfaguara-square-16.jpg"]]}
 
    "/marquesado.html" {:title "Comarca del Marquesado"
-                       :route detail
+                       :route "detail"
                        :url "marquesado.html"
                        :paragraphs [
                                      "Esta ruta la vamos a realizar en la cara Norte  del Parque Nacional de Sierra Nevada en cuyas faldas se sitúa el acogedor pueblo de la Calahorra,  capital de la Comarca del Marquesado del Zenete, con su majestuoso castillo medieval dominando el altiplano granadino."
@@ -93,7 +91,7 @@
                                 ["images/segway/routes/marquesado/marquesado-15.jpg" "images/segway/routes/marquesado/marquesado-square-15.jpg"]
                                 ["images/segway/routes/marquesado/marquesado-16.jpg" "images/segway/routes/marquesado/marquesado-square-16.jpg"]]}
    "/gorafe.html" {:title "Dólmenes de Gorafe (Desierto granadino)"
-                   :route detail
+                   :route "detail"
                    :url "gorafe.html"
                    :paragraphs [
                                  "Al Norte de Granada en el Altiplano Granadino y en la depresión Guadix-Baza se encuentra Gorafe a 92 Km. de la capital. Un paisaje que nos sorprenderá a cada momento sobre una tierra colorada semidesértica."
@@ -116,7 +114,7 @@
                             ["images/segway/routes/gorafe/gorafe-16.jpg" "images/segway/routes/gorafe/gorafe-square-16.jpg"]
                             ["images/segway/routes/gorafe/gorafe-17.jpg" "images/segway/routes/gorafe/gorafe-square-17.jpg"]]}
    "/trevenque.html" {:title "Trevenque"
-                      :route detail
+                      :route "detail"
                       :url "trevenque.html"
                       :paragraphs [
                                     "Recorrido donde nos adentraremos en el Parque Nacional de Sierra Nevada circulando por pistas de tierra hasta llegar al cortijo de la Cortijuela  donde visitaremos su jardín botánico."
@@ -135,7 +133,7 @@
                                ["images/segway/routes/trevenque/trevenque-12.jpg" "images/segway/routes/trevenque/trevenque-square-12.jpg"]
                                ["images/segway/routes/trevenque/trevenque-13.jpg" "images/segway/routes/trevenque/trevenque-square-13.jpg"]]}
    "/vega-granada.html" {:title "Arco Noreste de la Vega de Granada"
-                         :route detail
+                         :route "detail"
                          :url "vega-granada.html"
                          :paragraphs [
                                        "El Arco Noroeste de la Vega de Granada está formado por 12  pueblos (  Alfacar- Beas de Granada- Calicasas- Cogollos Vega- Dudar- Guejar Sierra- Guevejar-Huetor Santillán- Nivar- Pinos Genil- Quentar- Viznar )  enclavados en dos espacios protegidos el Parque Natural de Sierra de Huetor y el Parque Nacional de Sierra Nevada y a escasos kilómetros de Granada."
@@ -143,7 +141,7 @@
                                        "Las rutas que realizamos en estos pueblos son de una hora de duración para que los visitantes  recorran y conozcan sus rincones de una manera diferente y como herramienta para los propietarios de casas rurales y hoteles ofrezcan un producto diferente que contribuya al desarrollo sostenible de su comarca."
                                        "<b>CARACTERÍSTICAS</b><ul><li>Tiempo estimado:<b>hora y media aproximada</b></li><li>Tipo de terreno:<b>tierra</b></li><li>Grupos:<b>2 a 4 personas, menor consultar</b></li></ul><b>PUNTO DE ENCUENTRO</b><ul><li>Recorridos en el parque Sierra de Huetor</li></ul><b>HORAS DE SALIDA</b><ul><li>Sin determinar, Por reserva</li></ul><b>PRECIOS</b><ul><li>60€ por persona</li></ul>"]}
    "/camarate.html" {:title "Dehesa del Camarate"
-                     :route detail
+                     :route "detail"
                      :url "camarate.html"
                      :paragraphs [
                                    "La dehesa del Camarate se encuentra situada en la cara Norte del Parque Nacional de Sierra Nevada en Lugros ,en  esta se encuentra el único bosque sub-mediterráneo de toda la sierra formado por arces, hayas, robles, quejigos, cerezos silvestres, encinas en su parte baja y un esplendido bosque de rivera a lo largo del río Alhama."
@@ -169,7 +167,7 @@
                               ["images/segway/routes/camarate/camarate-18.jpg" "images/segway/routes/camarate/camarate-square-18.jpg"]
                               ["images/segway/routes/camarate/camarate-19.jpg" "images/segway/routes/camarate/camarate-square-19.jpg"]]}
    "/fuente-teja.html" {:title "Fuente de la Teja"
-                        :route detail
+                        :route "detail"
                         :url "fuente-teja.html"
                         :paragraphs [
                                       "Güejar Sierra, es un pueblo blanco de calles estrechas y empinadas que conserva todavía el encanto natural cuya principal característica es el agua, destacando su fuente de los 16 caños. Enclavado en el Parque Nacional de Sierra Nevada junto al cauce del rio Genil y el embalse de Canales,  es  balcón privilegiado con fabulosas vistas sobre los picos más altos de la sierra, la Alcazaba y el Mulhacen en un paisaje de castaños, tilos, nogales, encinas, almeses, que impresiona al visitante. Además encontraremos una gastronomía rica en matices y aromas de montaña."
@@ -186,7 +184,7 @@
                                  ["images/segway/routes/fuente-teja/fuente-teja-09.jpg" "images/segway/routes/fuente-teja/fuente-teja-square-09.jpg"]
                                  ["images/segway/routes/fuente-teja/fuente-teja-10.jpg" "images/segway/routes/fuente-teja/fuente-teja-square-10.jpg"]]}
    "/guadix.html" {:title "Ciudad de Guadix"
-                   :route detail
+                   :route "detail"
                    :url "guadix.html"
                    :paragraphs [
                                  "Esta ruta la vamos a realizar en la Ciudad de Guadix (su significado árabe-Rio de la Vida), situada al noroeste de la capital granadina a unos 60 kilómetros y en la cara Norte de Sierra Nevada, asentada sobre una hoya en la que se alternan los ríos, tierras áridas, planicies de cereal y formaciones arcillosas fuertemente erosionadas."
@@ -215,7 +213,7 @@
                             ["images/segway/routes/guadix/guadix-20.jpg" "images/segway/routes/guadix/guadix-square-20.jpg"]
                             ["images/segway/routes/guadix/guadix-21.jpg" "images/segway/routes/guadix/guadix-square-21.jpg"]]}
    "/dilar.html" {:title "Dílar"
-                  :route detail
+                  :route "detail"
                   :url "dilar.html"
                   :paragraphs [
                                 "Esta ruta la realizamos en el pueblo de Dilar, frontera entre la vega y la sierra,   mirador privilegiado entre olivares y almendros en la salida del río del mismo nombre de la Sierra a la Vega."
@@ -232,7 +230,7 @@
                            ["images/segway/routes/dilar/dilar-09.jpg" "images/segway/routes/dilar/dilar-square-09.jpg"]
                            ["images/segway/routes/dilar/dilar-10.jpg" "images/segway/routes/dilar/dilar-square-10.jpg"]]}
    "/tranvia-sierra.html" {:title "Tranvía de la Sierra"
-                           :route detail
+                           :route "detail"
                            :url "tranvia-sierra.html"
                            :paragraphs [
                                          "Güejar Sierra, es un pueblo blanco de calles estrechas y empinadas que conserva todavía el encanto natural cuya principal característica es el agua, destacando su fuente de los 16 caños. Enclavado en el Parque Nacional de Sierra Nevada junto al cauce del rio Genil y el embalse de Canales,  es  balcón privilegiado con fabulosas vistas sobre los picos más altos de la sierra, la Alcazaba y el Mulhacen en un paisaje de castaños, tilos, nogales, encinas, almeses, que impresiona al visitante. Además encontraremos una gastronomía rica en matices y aromas de montaña."
@@ -251,7 +249,7 @@
                                     ["images/segway/routes/tranvia-sierra/tranvia-sierra-10.jpg" "images/segway/routes/tranvia-sierra/tranvia-sierra-square-10.jpg"]
                                     ["images/segway/routes/tranvia-sierra/tranvia-sierra-11.jpg" "images/segway/routes/tranvia-sierra/tranvia-sierra-square-11.jpg"]]}
    "/tracks.html" {:title "Circuitos"
-                   :route detail
+                   :route "detail"
                    :url "tracks.html"
                    :paragraphs [
                                  "Los circuitos segway los utilizamos en Fiestas Patronales, Fiestas Deportivas, Semanas Culturales, Institutos, etc. para que disfruten todos los participantes de una sensación única sobre un vehículo novedoso, no contaminante y divertido. Para que los vecinos y las personas que visitan el municipio lo recorran de una manera diferente, como incentivo de empresas, para publicitar la apertura de un comercio o local con una actividad novedosa y llamativa."
@@ -264,7 +262,7 @@
                             ["images/segway/tracks/tracks-02.jpg" "images/segway/tracks/tracks-square-02.jpg"]
                             ["images/segway/tracks/tracks-03.jpg" "images/segway/tracks/tracks-square-03.jpg"]]}
    "/about.html" {:title "Quienes Somos"
-                  :route detail
+                  :route "detail"
                   :url "about.html"
                   :paragraphs [
                                 "Miguel Algarra nacido 1962 en el Albaycín, amante de la naturaleza,  tras diferentes etapas relacionadas con  el medio natural,  el turismo activo y  varios años de formación crea una empresa con un grupo de personas jóvenes que apuestan  por un ecoturismo  sobre  ruedas,   respetuoso con el medio ambiente en un entorno  poco conocido, intimo y con  encanto natural. Basada en dar a conocer nuestros parques  naturales,  Sierra Nevada ,Sierra de  Huetor, comarca Guadix…., y  pueblos, con rutas alternativas, alojamientos singulares y gastronomía típica.  Pensando en un desarrollo sostenible de nuestra tierra  y como principio, el disfrute de nuestros clientes y su satisfacción, queriendo ofrecer  el mayor grado de calidad, trabajando con grupos reducidos de 4 personas  para los segway."
@@ -273,13 +271,13 @@
                                 "Pero nuestra actividad no se limita solo a las rutas en segway, también ofrecemos al cliente la posibilidad de elaborar paquetes de actividades  de uno o varios días, alternando las rutas en segway  con rutas de senderismo, canoas, bicicleta de montaña, paintball…..desplazándonos a cualquier punto de Andalucía que soliciten nuestros servicios."]
                   :images [["images/segway/about-01.jpg" "images/segway/about-square-01.jpg"]]}
    "/whatis.html" {:title "Que es un Segway"
-                   :route detail
+                   :route "detail"
                    :url "whatis.html"
                    :paragraphs [
                                  "El Segway es un vehículo de transporte ligero giroscópico eléctrico de dos ruedas, con auto balanceo controlado por ordenador. El ordenador y los motores situados en la base mantienen la base del Segway horizontal todo el tiempo. El usuario se debe inclinar hacia la dirección que quiera tomar (delante, detrás, derecha o izquierda). El motor es eléctrico y silencioso, alcanzando los 20 km/h."]
                    :images [["images/segway/whatis-01.jpg" "images/segway/whatis-square-01.jpg"]]}
    "/holidays.html" {:title "Paquetes Vacationales"
-                     :route detail
+                     :route "detail"
                      :url "holidays.html"
                      :paragraphs [
                                    "Con estos paquetes vacacionales ofertamos rutas desde 2 días  hasta rutas de 6 días, para los amantes de la naturaleza resaltando los elementos abióticos,  bióticos y tradicionales que sorprenderán a nuestros visitantes ya que Granada es mucho más que su capital y costa. Todas nuestras rutas incluyen:<ul><li>Recogida en aeropuerto, estación de autobuses o tren en Granada. Para recogida en el aeropuerto de Málaga o Sevilla consultar<li>Alojamiento en pensión completa</li><li>Desplazamientos</li><li>Seguros R.C. y AC</li></ul>"
@@ -291,7 +289,7 @@
                               ["images/segway/holidays/holidays-03.jpg" "images/segway/holidays/holidays-square-03.jpg"]
                               ["images/segway/holidays/holidays-04.jpg" "images/segway/holidays/holidays-square-04.jpg"]]}
    "/faq.html" {:title "Preguntas frecuentes"
-                :route detail
+                :route "detail"
                 :url "faq.html"
                 :paragraphs [
                               "<b>¿Qué es un Segway?</b><br/>El Segway es el primer aparato de transporte impulsado eléctricamente que mantiene su propio equilibrio. El Segway es capaz de imitar el equilibrio humano. Nuestros Segway X2 pueden ir por cualquier camino en el que una persona pueda pasear."
@@ -303,7 +301,7 @@
                               "<b>¿Qué ropa tengo que llevar para montar en Segway?</b><br/>La ropa que normalmente lleves en la temporada que vas a hacer las rutas en Segway. En periodos calurosos ropa ligera y; en tiempo frío ropa de abrigo (guantes, gorro, polar, etc.). Aunque es recomendable usar la ropa que llevarías a una excursión al campo."
                               "<b>¿Qué calzado tengo que llevar para montar en Segway?</b><br/>El calzado recomendado para hacer rutas en Segway es calzado atado (no chanclas), ten en cuenta que es como pasear por el monte."]}
    "/home.html" {:title "Segway Granada Ventur"
-                 :route index
+                 :route "index"
                  :url "home.html"
                  :banners ["/albaycin.html" "/periurbano.html" "/marquesado.html"]
                  :boxes [

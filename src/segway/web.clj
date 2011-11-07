@@ -1,6 +1,7 @@
 (ns segway.web
   (:use segway.data
         segway.pages.home
+        segway.pages.detail
         ring.util.response
         [net.cgrand.moustache :only [app]]
         [clojure.contrib.duck-streams :only [pwd]])
@@ -20,8 +21,6 @@
           (let [url (req :uri)
                webdata-item (get webdata url)]
                 (render-to-response
-                          ((or (get webdata-item :route)
-                               index)
-                            webdata-item))))
+                          (if (= url "/home.html") (index webdata-item) (detail webdata-item)))))
    [&]        {:status 404
                :body "Page Not Found"}))
