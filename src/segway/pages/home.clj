@@ -26,6 +26,15 @@
   ;;@TODO Experiment Template inheritance
   [:title] (html/content "Segway Granada Ventur")
 
+  [:script] (html/clone-for [script ["scripts/jquery-1.4.1.min.js" "scripts/jquery.jcarousel.pack.js" "scripts/jquery.jcarousel.setup.js" "scripts/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.pack.js" "scripts/jquery.fancybox-1.3.4/fancybox/jquery.easing-1.3.pack.js" "scripts/jquery.fancybox-1.3.4/fancybox/jquery.mousewheel-3.0.4.pack.js" "inline"]]
+                (if (not (= (str script) "inline"))
+                  (html/do->
+                    (html/set-attr :src script)
+                    (html/content ""))
+                  (html/content "$(document).ready(function() { $(\"a.single_image\").fancybox();});")))
+
+  [:link] (html/html-content "<link rel=\"stylesheet\" href=\"scripts/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css\" type=\"text/css\" media=\"screen\" />")
+
   ;;Structure - using snippets in segway.pages.common
   ;;@TODO Here we're not using map in the right way, we should just apply the snippet function
   [:#header]   (html/content (map #(header-snippet %) [0]))
