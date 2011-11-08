@@ -8,7 +8,7 @@
         [ring.middleware.stacktrace :only [wrap-stacktrace]]))
 
 (def jetty-port (or (System/getenv "PORT") "8080"))
-(def environment (or (System/getenv "SEGWAY_ENV") "dev"))
+(def environment (or (System/getenv "SEGWAY_ENV") "production"))
 
 (defn run-server* [app & {:keys [port] :or {port (Integer/parseInt jetty-port)}}]
   (let [nses [(-> (:ns (meta app))
