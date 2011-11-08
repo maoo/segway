@@ -1,4 +1,4 @@
-(defproject hello-world "0.0.1"
+(defproject segway "0.0.1"
   :dependencies
     [[org.clojure/clojure "1.2.1"]
      [org.clojure/clojure-contrib "1.2.0"]
