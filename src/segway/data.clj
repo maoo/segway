@@ -309,7 +309,7 @@
                        :link "/whatis.html"}
                       {:image ["images/segway/helmet.jpg"]
                        :title "Seguridad el lo primero"
-                       :paragraph "Somos el unico <a target=\"_blank\" href=\"http://www.segway.es\">Centro Segway certificado</a> en Granada por la circulacion en la carretera; ponemos la seguridad de nuestos clientes antes de todo, desarrolando un curso para aprender a conducir el segway de forma sencilla y segura"}
+                       :paragraph "Somos el unico <a target=\"_blank\" href=\"http://www.segway.es/segwaypoint.asp\">Centro Segway certificado</a> en Granada por la circulacion en la carretera; ponemos la seguridad de nuestos clientes antes de todo, desarrolando un curso para aprender a conducir el segway de forma sencilla y segura"}
                       {:image ["images/segway/tracks/tracks-square-01.jpg" "images/segway/tracks/tracks-01.jpg"]
                        :link "/tracks.html"
                        :class "last"}]}})
