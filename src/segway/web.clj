@@ -15,12 +15,15 @@
 (def render-to-response
      (comp response render))
 
+(defn redirectToTemplates
+  [url]
+  (let [webdata-item (get webdata url)]
+      (render-to-response
+        (if (= url "/index.html") (index webdata-item) (detail webdata-item)))))
+
 (def routes
   (app
+    [""] (fn [req]
+          (let [url (req :uri)] (redirectToTemplates "/index.html")))
     [*] (fn [req]
-          (let [url (req :uri)
-               webdata-item (get webdata url)]
-                (render-to-response
-                          (if (= url "/index.html") (index webdata-item) (detail webdata-item)))))
-   [&]        {:status 404
-               :body "Page Not Found"}))
+          (let [url (req :uri)] (redirectToTemplates url)))))
