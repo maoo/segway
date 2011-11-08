@@ -16,9 +16,11 @@ some transformations to the HTML structure.
 
 Enlive provided me the exact right tool for this job. You can easily assign HTML transformations to CSS Selectors.
 
-The next challenge (where I'm still working) is to completely separate the data from the injection logic and eventually
-persist data somewhere (probably a KV store in the cloud)
+The next challenges (where I'm still working) are:
+* Avoid any manual change to the original HTML templates (whereas sometimes I had to, due to my scarse skills with Enlive)
+* Complete separation from data to injection logic and eventually persist data somewhere (probably a KV store in the cloud)
 
+Hope you'll enjoy it and maybe find some useful idea/snippet!
 
 Run it locally
 --
